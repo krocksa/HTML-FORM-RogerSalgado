@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/80b684dad1.js" crossorigin="anonymous"></script>
+    <title>Form de Roger</title>
+</head>
+<body>
+    <form class="row g-3 needs-validation" novalidate>
+        <table>
+            <thead>
+                <tr class="header">
+                    <td colspan="3">
+                        <h2>Payment form example</h2>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="top">
+                    <td colspan="3">
+                        Some fields are missing
+                    </td>
+                </tr>
+                <tr class="top-2">                         
+                            <td colspan="1">
+                                Card #
+                            </td>                            
+                            <td>
+                                CVC #
+                            </td>
+                            <td>
+                                Amount
+                            </td>
+                </tr>
+                <tr class="top-3">
+                    <td><input type="text" class="form-control" id="" size="50" placeholder="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" value="" required></td>
+                    <td><input type="text" class="form-control" id="" size="30" placeholder="0000" value="" required></td>
+                    <td>$<input type="text" class="form-control" id="" size="38" placeholder="Amount" value="" required></td>
+                </tr>
+                <tr class="med">
+                    <td colspan="2">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                    </td>
+                    <td>
+                            <label for="validationCustom02" class="form-label">Last name</label>
+                    </td>
+                </tr>
+                <tr class="med-2">
+                    <td colspan="2"><input type="text" class="form-control" id="validationCustom01" size="60" value=""></td>
+                    <td><input type="text" class="form-control" id="validationCustom02" size="40" value=""></td>
+                </tr>
+                <tr class="back"> 
+                    <td>                        
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">City</label>
+                        </div>
+                    </td>
+                    <td>                        
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">State</label>
+                        </div>
+                    </td>
+                    <td>                        
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label">Postal Code</label>                            
+                        </div>
+                    </td>                   
+                    </tr>
+                    <tr class="back-2">
+                        <td><input type="text" class="form-control" size="60" id="validationCustom03" required></td>
+                        <td>
+                            <select class="form-select" id="validationCustom04" required>
+                            <option>Pick a state</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="form-control" size="30" id="validationCustom05" required></td>
+                    </tr>
+                    <tr class="pre-foot">
+                        <td>We accept:</td>
+                        <td colspan="2">Message</td>
+                    </tr>
+                    <tr class="pre-foot-2">
+                        <td>
+                                <button type="submit" class="btn btn-dark">
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-amex"></i></label>
+                              </div>
+                            </button>
+                        </td>
+                        <td colspan="2">
+                            <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 80px; width: 600px"></textarea><br>
+                            Add any notes here.
+                        </td>
+                    </tr>
+            </tbody>
+    <tfoot>
+        <tr class="footer">
+            <td colspan="3">
+            <div class="col-12">
+                <button class="btn btn-secondary" type="submit">Cancel</button>
+                <button class="btn btn-primary" type="submit">Send</button>
+                
+            </div>
+            </td>
+        </tr>
+    </tfoot>
+    </table>
+</form>
+      <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+      </script>
+</body>
+</html>

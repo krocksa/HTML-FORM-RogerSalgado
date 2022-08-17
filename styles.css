@@ -1,0 +1,35 @@
+body{
+    background: black;
+}
+form{
+    background: white;
+    width: 90%;
+    height: 641px;
+    margin: auto;
+}
+table{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+}
+thead{
+    background: #f3f1f1;
+}
+.top{
+    background: #f7c4c4;
+    height: 40px;
+
+}
+.top-2,.med,.back{
+    height: 50px;
+}
+.top-3,.med-2,.back-2{
+    height: 30px;
+}
+.footer{
+    text-align: right;
+    height: 40px;
+}
+table td{
+    padding: 10px;
+} 
